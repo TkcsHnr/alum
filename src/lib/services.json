@@ -1,0 +1,101 @@
+[
+    {
+        "id": "felveteli",
+        "title": "Középiskolai felvételi",
+        "description": "Felkészítés a középiskolai felvételire, különböző gimnáziumi programokra.",
+        "items": [
+            {
+                "title": "8 osztályos gimnázium",
+                "description": "Felvételi felkészítés 8 osztályos gimnáziumba jelentkezőknek.",
+                "email": "felveteli8@example.com",
+                "email_instructions": "..."
+            },
+            {
+                "title": "6 osztályos gimnázium",
+                "description": "Felvételi felkészítés 6 osztályos gimnáziumba jelentkezőknek.",
+                "email": "felveteli6@example.com",
+                "email_instructions": "..."
+            },
+            {
+                "title": "4 osztályos gimnázium",
+                "description": "Felvételi felkészítés 4 osztályos gimnáziumba jelentkezőknek.",
+                "email": "felveteli4@example.com",
+                "email_instructions": "..."
+            }
+        ]
+    },
+    {
+        "id": "erettsegi",
+        "title": "Érettségi felkészítés",
+        "description": "Felkészítés az érettségire több tantárgyból.",
+        "items": [
+            {
+                "title": "Matematika",
+                "description": "Matematika érettségi felkészítés.",
+                "email": "erettsegi@example.com",
+                "email_instructions": "..."
+            },
+            {
+                "title": "Fizika",
+                "description": "Fizika érettségi felkészítés.",
+                "email": "erettsegi@example.com",
+                "email_instructions": "..."
+            },
+            {
+                "title": "Magyar nyelv és irodalom",
+                "description": "Magyar nyelv és irodalom érettségi felkészítés.",
+                "email": "erettsegi@example.com",
+                "email_instructions": "..."
+            },
+            {
+                "title": "Történelem",
+                "description": "Történelem érettségi felkészítés.",
+                "email": "erettsegi@example.com",
+                "email_instructions": "..."
+            },
+            {
+                "title": "Informatika",
+                "description": "Informatika érettségi felkészítés.",
+                "email": "erettsegi@example.com",
+                "email_instructions": "..."
+            }
+        ]
+    },
+    {
+        "id": "korrepetalas",
+        "title": "Korrepetálás",
+        "description": "Tantárgyi korrepetálás minden szinten.",
+        "items": [
+            {
+                "title": "Matematika",
+                "description": "Matematika korrepetálás.",
+                "email": "korrepetalas@example.com",
+                "email_instructions": "..."
+            },
+            {
+                "title": "Fizika",
+                "description": "Fizika korrepetálás.",
+                "email": "korrepetalas@example.com",
+                "email_instructions": "..."
+            },
+            {
+                "title": "Magyar nyelv és irodalom",
+                "description": "Magyar nyelv és irodalom korrepetálás.",
+                "email": "korrepetalas@example.com",
+                "email_instructions": "..."
+            },
+            {
+                "title": "Történelem",
+                "description": "Történelem korrepetálás.",
+                "email": "korrepetalas@example.com",
+                "email_instructions": "..."
+            },
+            {
+                "title": "Informatika",
+                "description": "Informatika korrepetálás.",
+                "email": "korrepetalas@example.com",
+                "email_instructions": "..."
+            }
+        ]
+    }
+]

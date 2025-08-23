@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Fürjes Bálint",
+        "imageUrl": "fürjes.jpg",
+        "subjects": [
+            "Matematika",
+            "Fizika"
+        ],
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae officiis provident eveniet cum ab natus quia repellendus esse architecto, voluptates possimus quidem molestias neque, aspernatur rem voluptatibus, qui ducimus ea? Culpa ratione unde excepturi possimus voluptatibus, quia facere porro minus alias illo esse laborum vel deserunt amet id, dolore quisquam ex sequi aliquam? Accusamus ea sint facere, harum, molestias, sed reprehenderit rem labore voluptate hic delectus eius inventore nemo quo pariatur et exercitationem unde corporis porro illum doloremque. Et ipsum officia vitae odit modi dolorem placeat porro? Aliquid natus odit asperiores magnam molestias, error laboriosam voluptatem numquam, unde reprehenderit repellendus.",
+        "email": ""
+    },
+    {
+        "name": "Gáspár Dorka",
+        "imageUrl": "dorka.jpg",
+        "subjects": [
+            "Matematika",
+            "Történelem"
+        ],
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae officiis provident eveniet cum ab natus quia repellendus esse architecto, voluptates possimus quidem molestias neque, aspernatur rem voluptatibus, qui ducimus ea? Culpa ratione unde excepturi possimus voluptatibus, quia facere porro minus alias illo esse laborum vel deserunt amet id, dolore quisquam ex sequi aliquam? Accusamus ea sint facere, harum, molestias, sed reprehenderit rem labore voluptate hic delectus eius inventore nemo quo pariatur et exercitationem unde corporis porro illum doloremque. Et ipsum officia vitae odit modi dolorem placeat porro? Aliquid natus odit asperiores magnam molestias, error laboriosam voluptatem numquam, unde reprehenderit repellendus.",
+        "email": ""
+    },
+    {
+        "name": "Juhász Anna",
+        "imageUrl": "avatar.png",
+        "subjects": [
+            "Történelem"
+        ],
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae officiis provident eveniet cum ab natus quia repellendus esse architecto, voluptates possimus quidem molestias neque, aspernatur rem voluptatibus, qui ducimus ea? Culpa ratione unde excepturi possimus voluptatibus, quia facere porro minus alias illo esse laborum vel deserunt amet id, dolore quisquam ex sequi aliquam? Accusamus ea sint facere, harum, molestias, sed reprehenderit rem labore voluptate hic delectus eius inventore nemo quo pariatur et exercitationem unde corporis porro illum doloremque. Et ipsum officia vitae odit modi dolorem placeat porro? Aliquid natus odit asperiores magnam molestias, error laboriosam voluptatem numquam, unde reprehenderit repellendus.",
+        "email": ""
+    },
+    {
+        "name": "Bodor Janka",
+        "imageUrl": "avatar.png",
+        "subjects": [
+            "Magyar nyelv és irodalom"
+        ],
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae officiis provident eveniet cum ab natus quia repellendus esse architecto, voluptates possimus quidem molestias neque, aspernatur rem voluptatibus, qui ducimus ea? Culpa ratione unde excepturi possimus voluptatibus, quia facere porro minus alias illo esse laborum vel deserunt amet id, dolore quisquam ex sequi aliquam? Accusamus ea sint facere, harum, molestias, sed reprehenderit rem labore voluptate hic delectus eius inventore nemo quo pariatur et exercitationem unde corporis porro illum doloremque. Et ipsum officia vitae odit modi dolorem placeat porro? Aliquid natus odit asperiores magnam molestias, error laboriosam voluptatem numquam, unde reprehenderit repellendus.",
+        "email": ""
+    },
+    {
+        "name": "Takács Hunor",
+        "imageUrl": "hunor.jpeg",
+        "subjects": [
+            "Informatika",
+            "Matematika"
+        ],
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae officiis provident eveniet cum ab natus quia repellendus esse architecto, voluptates possimus quidem molestias neque, aspernatur rem voluptatibus, qui ducimus ea? Culpa ratione unde excepturi possimus voluptatibus, quia facere porro minus alias illo esse laborum vel deserunt amet id, dolore quisquam ex sequi aliquam? Accusamus ea sint facere, harum, molestias, sed reprehenderit rem labore voluptate hic delectus eius inventore nemo quo pariatur et exercitationem unde corporis porro illum doloremque. Et ipsum officia vitae odit modi dolorem placeat porro? Aliquid natus odit asperiores magnam molestias, error laboriosam voluptatem numquam, unde reprehenderit repellendus.",
+        "email": ""
+    }
+]
