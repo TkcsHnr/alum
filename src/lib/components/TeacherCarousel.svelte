@@ -15,13 +15,15 @@
 </script>
 
 <div class="flex flex-col items-center gap-2 w-full">
-	<div class="indicator mt-4 w-full max-w-4xl flex justify-center">
+	<div
+		class="indicator mt-4 w-full max-w-4xl flex justify-center [--rad:calc(var(--radius-box)+1.5rem)]"
+	>
 		<span class="indicator-item indicator-center badge badge-lg badge-primary">Tanáraink</span>
 		<div
-			class="absolute left-0 h-full w-6 z-10 rounded-l-3xl bg-gradient-to-r from-base-300 to-transparent hidden lg:block"
+			class="absolute left-0 h-full w-[var(--rad)] z-10 rounded-l-[var(--rad)] bg-gradient-to-r from-base-300/50 to-transparent hidden lg:block"
 		></div>
 		<div
-			class="carousel carousel-center w-full gap-6 bg-base-300 p-6 lg:rounded-3xl relative"
+			class="carousel carousel-center w-full gap-6 bg-base-300 p-6 lg:rounded-[var(--rad)] relative"
 			bind:this={carouselElement}
 		>
 			{#each teachers as teacher}
@@ -34,7 +36,7 @@
 			{/each}
 		</div>
 		<div
-			class="absolute right-0 h-full w-6 z-10 rounded-r-3xl bg-gradient-to-r from-transparent to-base-300 hidden lg:block"
+			class="absolute right-0 h-full w-[var(--rad)] z-10 rounded-r-[var(--rad)] bg-gradient-to-r from-transparent to-base-300/50 hidden lg:block"
 		></div>
 	</div>
 

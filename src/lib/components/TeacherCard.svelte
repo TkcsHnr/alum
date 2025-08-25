@@ -36,21 +36,20 @@
 
 <dialog bind:this={modal} class="modal">
 	<div class="modal-box max-w-3xl gap-2">
-		<form method="dialog">
-			<button class="btn btn-sm btn-circle absolute right-2 top-2" aria-label="close">
-				<i class="fa-solid fa-xmark"></i>
-			</button>
-		</form>
-
-		<div class="flex flex-wrap gap-2 items-baseline mr-4">
-			<h2 class="text-lg font-bold">
-				{name}
-			</h2>
-			<div class="flex gap-2">
+		<div class="flex gap-2">
+			<div class="flex flex-wrap gap-2 items-baseline grow">
+				<h2 class="text-lg font-bold">
+					{name}
+				</h2>
 				{#each subjects as subject}
 					<span class="badge badge-outline">{subject}</span>
 				{/each}
 			</div>
+			<form method="dialog">
+				<button class="btn btn-sm btn-square" aria-label="close">
+					<i class="fa-solid fa-xmark"></i>
+				</button>
+			</form>
 		</div>
 		<p class="mt-2 text-justify">{description}</p>
 	</div>

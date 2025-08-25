@@ -103,7 +103,7 @@
 						{#each ['Matematika', 'Magyar nyelv'] as subject}
 							<input
 								type="checkbox"
-								class="btn"
+								class="btn border border-base-content/15"
 								aria-label={subject}
 								value={subject}
 								bind:group={subjects}
@@ -120,7 +120,7 @@
 							{#each ['Közép', 'Emelt'] as level}
 								<input
 									type="checkbox"
-									class="btn"
+									class="btn border border-base-content/15"
 									aria-label={level}
 									checked={subjects.includes(subjectFormat(option.name, level))}
 									onchange={() => toggleSubject(option.name, level)}
@@ -136,7 +136,7 @@
 					{#each service.options as option}
 						<input
 							type="checkbox"
-							class="btn"
+							class="btn border border-base-content/15"
 							aria-label={option.name}
 							value={option.name}
 							bind:group={subjects}
