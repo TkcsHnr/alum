@@ -1,13 +1,11 @@
 <script lang="ts">
-	import TeacherCard from '$lib/components/TeacherCard.svelte';
 	import type { PageProps } from './$types';
 
-	import teachers from '$lib/teachers.json';
 	import TeacherCarousel from '$lib/components/TeacherCarousel.svelte';
+	import BannerCarousel from '$lib/components/BannerCarousel.svelte';
 
 	let { data }: PageProps = $props();
 </script>
 
-
+<BannerCarousel />
 <TeacherCarousel />
-

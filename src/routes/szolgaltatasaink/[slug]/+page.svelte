@@ -5,11 +5,12 @@
 </script>
 
 {#if service}
-	<div class="max-w-4xl flex justify-center relative w-full">
-		<h1 class="text-2xl font-bold mb-4">{service.name}</h1>
-		<a href="/szolgaltatasaink" class="btn btn-square absolute left-4" aria-label="back">
+	<div class="max-w-4xl flex w-full mt-4 px-4">
+		<a href="/szolgaltatasaink" class="btn btn-sm aspect-square min-w-0 w-auto" aria-label="back">
 			<i class="fa-solid fa-arrow-left"></i>
 		</a>
+		<h1 class="text-2xl font-bold justify-self-center text-center grow">{service.name}</h1>
+		<div class="aspect-square h-full"></div>
 	</div>
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 max-w-4xl">
 		{#each service.options as option}

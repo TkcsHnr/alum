@@ -8,9 +8,9 @@
 	let basePath = $derived(page.url.pathname);
 </script>
 
-<div class="px-4 max-w-4xl w-full flex flex-col gap-4 h-full">
-	<div class="breadcrumbs items-end pb-4 pt-0">
-		<ul class="mx-auto">
+<div class="px-4 max-w-4xl w-full flex flex-col gap-2 h-full">
+	<div class="breadcrumbs pt-4 w-fit mx-auto">
+		<ul>
 			{#each breadcrumbs as r, i}
 				<li>
 					<a

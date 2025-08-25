@@ -6,7 +6,7 @@
 </script>
 
 <Container>
-	<h1 class="text-2xl font-bold mb-4 mx-auto">Jelentkezés</h1>
+	<h1 class="text-2xl font-bold">Jelentkezés</h1>
 	<p class="text-justify">
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consequatur accusamus debitis
 		dolor, quia nobis possimus quis ratione explicabo obcaecati, esse, voluptas totam quidem
@@ -22,9 +22,7 @@
 		accusantium incidunt error obcaecati animi tempora similique minima!
 	</p>
 
-	<a href="/jelentkezes/urlap" class="btn btn-lg btn-primary mt-8 py-6 w-full max-w-xs mx-auto"
+	<a href="/jelentkezes/urlap" class="btn btn-lg btn-primary mt-8 py-6 w-full max-w-xs"
 		>Jelentkezési lap kitöltése</a
 	>
 </Container>
-
-

@@ -16,7 +16,7 @@
 
 <div class="flex flex-col items-center gap-2 w-full">
 	<div
-		class="indicator mt-4 w-full max-w-4xl flex justify-center [--rad:calc(var(--radius-box)+1.5rem)]"
+		class="indicator mt-4 w-full lg:max-w-5xl flex justify-center [--rad:calc(var(--radius-box)+1.5rem)]"
 	>
 		<span class="indicator-item indicator-center badge badge-lg badge-primary">Tanáraink</span>
 		<div

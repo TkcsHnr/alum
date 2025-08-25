@@ -28,7 +28,7 @@
 	}
 </script>
 
-<form method="POST" class="w-full px-4 flex justify-center">
+<form method="POST" class="w-full px-4 mt-4 flex justify-center">
 	<input type="text" hidden name="subjects" value={subjects} />
 	{#if service}
 		<input type="email" hidden name="service_email" value={service.email} />

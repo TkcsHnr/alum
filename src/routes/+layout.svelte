@@ -30,7 +30,7 @@
 	<div class="drawer-content flex flex-col">
 		<!-- Navbar -->
 		<div
-			class="navbar bg-base-300 border-b border-base-content/15 sticky top-0 shadow-sm w-full z-10"
+			class="navbar bg-base-300 border-b border-base-content/15 top-0 shadow-sm w-full z-10"
 		>
 			<label for="drawer-menu" aria-label="open sidebar" class="btn btn-square btn-ghost lg:hidden">
 				<i class="fa-solid fa-bars text-xl"></i>
@@ -53,7 +53,7 @@
 		</div>
 
 		<!-- Page content here -->
-		<main class="flex flex-col items-center py-8 gap-4 h-full grow">
+		<main class="flex flex-col items-center gap-4 h-full grow">
 			{@render children()}
 		</main>
 

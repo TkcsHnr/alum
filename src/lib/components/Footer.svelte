@@ -1,5 +1,5 @@
 <footer
-	class="footer footer-horizontal footer-center bg-base-300 border-t border-base-content/15 text-base-content p-8 gap-4"
+	class="footer footer-horizontal footer-center bg-base-300 border-t border-base-content/15 text-base-content p-8 gap-4 mt-8"
 >
 	<aside>
 		<p class="font-bold text-lg">Alum Oktatási Központ</p>
