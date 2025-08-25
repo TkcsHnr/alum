@@ -1,4 +1,4 @@
-<footer class="footer footer-horizontal footer-center bg-base-300 text-primary-content p-8 gap-4">
+<footer class="footer footer-horizontal footer-center bg-base-300 text-base-content p-8 gap-4">
 	<aside>
 		<p class="font-bold text-lg">Alum Tanulmányi Központ</p>
 		<p>© {new Date().getFullYear()} - Minden jog fenntarva.</p>
