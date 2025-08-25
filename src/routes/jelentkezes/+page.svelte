@@ -22,7 +22,7 @@
 		accusantium incidunt error obcaecati animi tempora similique minima!
 	</p>
 
-	<a href="/jelentkezes/urlap" class="btn btn-lg btn-success mt-8 py-8 w-full max-w-sm mx-auto"
+	<a href="/jelentkezes/urlap" class="btn btn-lg btn-primary mt-8 py-6 w-full max-w-xs mx-auto"
 		>Jelentkezési lap kitöltése</a
 	>
 </Container>

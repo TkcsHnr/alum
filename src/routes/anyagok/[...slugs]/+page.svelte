@@ -35,7 +35,7 @@
 					<a
 						href={item.url}
 						target="_blank"
-						class="btn btn-lg grow join-item hover:scale-105 transition-all"
+						class="btn btn-lg grow border border-base-content/15 join-item hover:scale-105 transition-all"
 					>
 						{item.name}
 					</a>
@@ -43,7 +43,7 @@
 					<a
 						href={item.urls[0]}
 						target="_blank"
-						class="btn btn-lg grow join-item hover:scale-105 hover:rounded-b-sm transition-all"
+						class="btn btn-lg grow join-item border border-base-content/15 hover:scale-105 transition-all"
 					>
 						{item.name}
 						<span>- tavasz</span>
@@ -51,7 +51,7 @@
 					<a
 						href={item.urls[1]}
 						target="_blank"
-						class="btn btn-lg grow join-item hover:scale-105 hover:rounded-t-sm transition-all"
+						class="btn btn-lg grow join-item border border-base-content/15 hover:scale-105 transition-all"
 					>
 						{item.name}
 						<span>- ősz</span>
@@ -59,7 +59,7 @@
 				{:else}
 					<a
 						href="{basePath}/{item.id}"
-						class="btn btn-lg grow join-item hover:scale-105 transition-all"
+						class="btn btn-lg grow join-item border border-base-content/15 hover:scale-105 transition-all"
 					>
 						{item.name}
 					</a>

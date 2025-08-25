@@ -10,7 +10,7 @@
 		e.currentTarget.blur();
 		modal.showModal();
 	}}
-	class="carousel-item cursor-pointer card bg-base-100 hover:bg-base-200 w-60 shadow-sm outline-error hover:shadow-md transition-all hover:scale-105 group"
+	class="carousel-item cursor-pointer card bg-base-100 border border-base-content/15 hover:bg-base-200 w-60 shadow-sm outline-error hover:shadow-md transition-all hover:scale-105 group"
 >
 	<figure class="px-6 pt-6">
 		<img
@@ -38,7 +38,7 @@
 	<div class="modal-box max-w-3xl gap-2">
 		<form method="dialog">
 			<button class="btn btn-sm btn-circle absolute right-2 top-2" aria-label="close">
-				 <i class="fa-solid fa-xmark"></i>
+				<i class="fa-solid fa-xmark"></i>
 			</button>
 		</form>
 

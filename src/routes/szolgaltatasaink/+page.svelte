@@ -10,7 +10,7 @@
 	{#each services as service}
 		<a
 			href="/szolgaltatasaink/{service.id}"
-			class="card group bg-base-200 shadow-sm h-full hover:bg-base-300 hover:shadow-md hover:scale-[102.5%] transition-all cursor-pointer"
+			class="card group bg-base-200 border border-base-content/15 shadow-sm h-full hover:bg-base-300 hover:shadow-md hover:scale-[102.5%] transition-all cursor-pointer"
 		>
 			<div class="card-body p-4">
 				<h2 class="card-title text-left">
@@ -32,5 +32,5 @@
 			</div>
 		</a>
 	{/each}
-	<a href="/jelentkezes" class="btn btn-info w-fit mx-auto btn-lg mt-4">Jelentkezés</a>
+	<a href="/jelentkezes" class="btn btn-primary w-fit mx-auto btn-lg mt-4">Jelentkezés</a>
 </div>

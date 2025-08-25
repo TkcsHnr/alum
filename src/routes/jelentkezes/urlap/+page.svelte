@@ -34,7 +34,7 @@
 		<input type="email" hidden name="service_email" value={service.email} />
 	{/if}
 	<fieldset
-		class="fieldset bg-base-200 border-base-300 shadow-sm rounded-box max-w-lg w-full border p-4 pt-2 gap-0"
+		class="fieldset bg-base-200 border border-base-content/15 shadow-sm rounded-box max-w-lg w-full p-4 pt-2 gap-0"
 	>
 		<legend class="fieldset-legend">Jelentkezés</legend>
 
@@ -151,6 +151,6 @@
 		<textarea class="textarea w-full" name="message" placeholder="Üzenet" bind:value={message}
 		></textarea>
 
-		<input type="submit" class="btn btn-success mt-4" value="Küldés" />
+		<input type="submit" class="btn btn-primary mt-4" value="Küldés" />
 	</fieldset>
 </form>

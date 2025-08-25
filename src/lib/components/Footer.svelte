@@ -1,4 +1,6 @@
-<footer class="footer footer-horizontal footer-center bg-base-300 text-base-content p-8 gap-4">
+<footer
+	class="footer footer-horizontal footer-center bg-base-300 border-t border-base-content/15 text-base-content p-8 gap-4"
+>
 	<aside>
 		<p class="font-bold text-lg">Alum Oktatási Központ</p>
 		<p>© {new Date().getFullYear()} - Minden jog fenntarva.</p>
@@ -13,7 +15,7 @@
 			>
 				<i class="fa-brands fa-facebook text-2xl"></i>
 			</a>
-            <a
+			<a
 				href="mailto:info@alum.hu"
 				target="_blank"
 				aria-label="instagram"

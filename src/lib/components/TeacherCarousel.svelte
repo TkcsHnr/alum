@@ -14,9 +14,9 @@
 	}
 </script>
 
-<div class="flex flex-col items-center gap-2 w-full">
+<div class="flex flex-col items-center gap-1 w-full">
 	<div class="indicator mt-4 w-full max-w-4xl flex justify-center">
-		<span class="indicator-item indicator-center badge badge-lg badge-info">Tanáraink</span>
+		<span class="indicator-item indicator-center badge badge-lg badge-primary">Tanáraink</span>
 		<div
 			class="absolute left-0 h-full w-6 z-10 rounded-l-3xl bg-gradient-to-r from-base-300 to-transparent hidden lg:block"
 		></div>
