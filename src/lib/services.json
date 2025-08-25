@@ -1,100 +1,77 @@
 [
     {
         "id": "felveteli",
-        "title": "Középiskolai felvételi",
+        "name": "Középiskolai felvételi",
         "description": "Felkészítés a középiskolai felvételire, különböző gimnáziumi programokra.",
-        "items": [
+        "email": "felveteli@alumoktatas.hu",
+        "options": [
             {
-                "title": "8 osztályos gimnázium",
-                "description": "Felvételi felkészítés 8 osztályos gimnáziumba jelentkezőknek.",
-                "email": "felveteli8@example.com",
-                "email_instructions": "..."
+                "name": "8 osztályos",
+                "description": "Felvételi felkészítés 8 osztályos gimnáziumba jelentkezőknek."
             },
             {
-                "title": "6 osztályos gimnázium",
-                "description": "Felvételi felkészítés 6 osztályos gimnáziumba jelentkezőknek.",
-                "email": "felveteli6@example.com",
-                "email_instructions": "..."
+                "name": "6 osztályos",
+                "description": "Felvételi felkészítés 6 osztályos gimnáziumba jelentkezőknek."
             },
             {
-                "title": "4 osztályos gimnázium",
-                "description": "Felvételi felkészítés 4 osztályos gimnáziumba jelentkezőknek.",
-                "email": "felveteli4@example.com",
-                "email_instructions": "..."
+                "name": "4 osztályos",
+                "description": "Felvételi felkészítés 4 osztályos gimnáziumba jelentkezőknek."
             }
         ]
     },
     {
         "id": "erettsegi",
-        "title": "Érettségi felkészítés",
+        "name": "Érettségi felkészítés",
         "description": "Felkészítés az érettségire több tantárgyból.",
-        "items": [
+        "email": "erettsegi@alumoktatas.hu",
+        "options": [
             {
-                "title": "Matematika",
-                "description": "Matematika érettségi felkészítés.",
-                "email": "erettsegi@example.com",
-                "email_instructions": "..."
+                "name": "Matematika",
+                "description": "Matematika érettségi felkészítés."
             },
             {
-                "title": "Fizika",
-                "description": "Fizika érettségi felkészítés.",
-                "email": "erettsegi@example.com",
-                "email_instructions": "..."
+                "name": "Fizika",
+                "description": "Fizika érettségi felkészítés."
             },
             {
-                "title": "Magyar nyelv és irodalom",
-                "description": "Magyar nyelv és irodalom érettségi felkészítés.",
-                "email": "erettsegi@example.com",
-                "email_instructions": "..."
+                "name": "Magyar nyelv és irodalom",
+                "description": "Magyar nyelv és irodalom érettségi felkészítés."
             },
             {
-                "title": "Történelem",
-                "description": "Történelem érettségi felkészítés.",
-                "email": "erettsegi@example.com",
-                "email_instructions": "..."
+                "name": "Történelem",
+                "description": "Történelem érettségi felkészítés."
             },
             {
-                "title": "Informatika",
-                "description": "Informatika érettségi felkészítés.",
-                "email": "erettsegi@example.com",
-                "email_instructions": "..."
+                "name": "Informatika",
+                "description": "Informatika érettségi felkészítés."
             }
         ]
     },
     {
         "id": "korrepetalas",
-        "title": "Korrepetálás",
+        "name": "Korrepetálás",
         "description": "Tantárgyi korrepetálás minden szinten.",
-        "items": [
+        "email": "korrep@alumoktatas.hu",
+        "options": [
             {
-                "title": "Matematika",
-                "description": "Matematika korrepetálás.",
-                "email": "korrepetalas@example.com",
-                "email_instructions": "..."
+                "name": "Matematika",
+                "description": "Matematika korrepetálás."
             },
             {
-                "title": "Fizika",
-                "description": "Fizika korrepetálás.",
-                "email": "korrepetalas@example.com",
-                "email_instructions": "..."
+                "name": "Fizika",
+                "description": "Fizika korrepetálás."
             },
             {
-                "title": "Magyar nyelv és irodalom",
-                "description": "Magyar nyelv és irodalom korrepetálás.",
-                "email": "korrepetalas@example.com",
-                "email_instructions": "..."
+                "name": "Magyar nyelv és irodalom",
+                "description": "Magyar nyelv és irodalom korrepetálás."
             },
             {
-                "title": "Történelem",
-                "description": "Történelem korrepetálás.",
-                "email": "korrepetalas@example.com",
-                "email_instructions": "..."
+                "name": "Történelem",
+                "description": "Történelem korrepetálás."
             },
             {
-                "title": "Informatika",
-                "description": "Informatika korrepetálás.",
-                "email": "korrepetalas@example.com",
-                "email_instructions": "..."
+                "name": "Informatika",
+                "description": "Informatika korrepetálás."
             }
         ]
     }

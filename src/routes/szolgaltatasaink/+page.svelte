@@ -14,7 +14,7 @@
 		>
 			<div class="card-body p-4">
 				<h2 class="card-title text-left">
-					{service.title}
+					{service.name}
 					<i
 						class="fa-solid fa-circle-info ml-auto text-base transition-all opacity-0 group-hover:opacity-100"
 					></i>
