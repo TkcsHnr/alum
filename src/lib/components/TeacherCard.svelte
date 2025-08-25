@@ -37,7 +37,9 @@
 <dialog bind:this={modal} class="modal">
 	<div class="modal-box max-w-3xl gap-2">
 		<form method="dialog">
-			<button class="btn btn-sm btn-circle absolute right-2 top-2">✕</button>
+			<button class="btn btn-sm btn-circle absolute right-2 top-2" aria-label="close">
+				 <i class="fa-solid fa-xmark"></i>
+			</button>
 		</form>
 
 		<div class="flex flex-wrap gap-2 items-baseline mr-4">

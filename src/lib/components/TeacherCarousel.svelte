@@ -3,7 +3,7 @@
 	import TeacherCard from './TeacherCard.svelte';
 </script>
 
-<div class="indicator mt-4 w-full max-w-6xl flex justify-center">
+<div class="indicator mt-4 w-full max-w-4xl flex justify-center">
 	<span class="indicator-item indicator-center badge badge-lg badge-info">Tanáraink</span>
 	<div
 		class="absolute left-0 h-full w-6 z-10 rounded-l-3xl bg-gradient-to-r from-base-300 to-transparent hidden lg:block"

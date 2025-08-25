@@ -34,7 +34,7 @@
 		<input type="email" hidden name="service_email" value={service.email} />
 	{/if}
 	<fieldset
-		class="fieldset bg-base-200 border-base-300 shadow-sm rounded-box max-w-lg w-full border p-4"
+		class="fieldset bg-base-200 border-base-300 shadow-sm rounded-box max-w-lg w-full border p-4 pt-2 gap-0"
 	>
 		<legend class="fieldset-legend">Jelentkezés</legend>
 
@@ -44,7 +44,7 @@
 		</label>
 
 		{#if parent}
-			<label class="label" for="parent_name">Szülő neve</label>
+			<label class="label mt-2 mb-1" for="parent_name">Szülő neve</label>
 			<input
 				type="text"
 				name="parent_name"
@@ -54,7 +54,7 @@
 				required
 			/>
 		{/if}
-		<label class="label" for="student_name">Diák neve</label>
+		<label class="label mt-2 mb-1" for="student_name">Diák neve</label>
 		<input
 			type="text"
 			name="student_name"
@@ -64,7 +64,7 @@
 			required
 		/>
 
-		<label class="label" for="email">Email</label>
+		<label class="label mt-2 mb-1" for="email">Email</label>
 		<input
 			type="email"
 			name="email"
@@ -74,7 +74,7 @@
 			required
 		/>
 
-		<label class="label" for="service_name">Szolgáltatás</label>
+		<label class="label mt-2 mb-1" for="service_name">Szolgáltatás</label>
 		<select
 			class="select w-full"
 			name="service_name"
@@ -90,7 +90,7 @@
 
 		{#if service}
 			{#if service.id == 'felveteli'}
-				<label class="label" for="school_type">Középiskola típusa</label>
+				<label class="label mt-2 mb-1" for="school_type">Középiskola típusa</label>
 				<select class="select w-full" name="school_type" bind:value={schoolType} required>
 					<option disabled selected value="">Középiskola típusa</option>
 					{#each service.options as option}
@@ -98,7 +98,7 @@
 					{/each}
 				</select>
 				{#if schoolType}
-					<span class="label">Tantárgyak</span>
+					<span class="label mt-2 mb-1">Tantárgyak</span>
 					<div class="flex gap-2">
 						{#each ['Matematika', 'Magyar nyelv'] as subject}
 							<input
@@ -113,9 +113,9 @@
 					</div>
 				{/if}
 			{:else if service.id == 'erettsegi'}
-				<div class="grid grid-cols-2 gap-2">
+				<div class="grid grid-cols-2 gap-x-2">
 					{#each service.options as option}
-						<div class="grid grid-cols-2 gap-2">
+						<div class="grid grid-cols-2 gap-x-2 pt-2">
 							<label class="label col-span-2" for={option.name}>{option.name}</label>
 							{#each ['Közép', 'Emelt'] as level}
 								<input
@@ -131,7 +131,7 @@
 					{/each}
 				</div>
 			{:else if service.id == 'korrepetalas'}
-				<span class="label">Tantárgyak</span>
+				<span class="label mt-2 mb-1">Tantárgyak</span>
 				<div class="grid grid-cols-2 gap-2">
 					{#each service.options as option}
 						<input
@@ -147,7 +147,7 @@
 			{/if}
 		{/if}
 
-		<label class="label" for="message">Üzenet</label>
+		<label class="label mt-2 mb-1" for="message">Üzenet</label>
 		<textarea class="textarea w-full" name="message" placeholder="Üzenet" bind:value={message}
 		></textarea>
 

@@ -9,8 +9,8 @@
 </script>
 
 <div class="px-4 max-w-4xl w-full flex flex-col gap-4 h-full">
-	<div class="breadcrumbs hidden sm:flex items-end pb-4 pt-0">
-		<ul class={breadcrumbs.length == 1 ? 'mx-auto' : 'mx-auto'}>
+	<div class="breadcrumbs items-end pb-4 pt-0">
+		<ul class="mx-auto">
 			{#each breadcrumbs as r, i}
 				<li>
 					<a
