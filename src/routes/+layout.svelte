@@ -30,10 +30,10 @@
 	<div class="drawer-content flex flex-col">
 		<!-- Navbar -->
 		<div class="navbar bg-primary text-primary-content w-full">
-			<label for="drawer-menu" aria-label="open sidebar" class="btn btn-square lg:hidden">
+			<label for="drawer-menu" aria-label="open sidebar" class="btn btn-square btn-ghost lg:hidden">
 				<i class="fa-solid fa-bars text-xl"></i>
 			</label>
-			<a class="btn btn-ghost text-lg sm:text-2xl mx-auto lg:m-0" href="/">Alum Tanulmányi Központ</a>
+			<a class="btn btn-ghost text-lg sm:text-2xl mx-auto lg:m-0" href="/">Alum Oktatási Központ</a>
 			<ul class="hidden lg:flex menu menu-horizontal ml-auto">
 				<!-- Navbar menu content here -->
 				{#each routes as route}

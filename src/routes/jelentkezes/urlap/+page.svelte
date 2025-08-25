@@ -113,7 +113,7 @@
 					</div>
 				{/if}
 			{:else if service.id == 'erettsegi'}
-				<div class="grid sm:grid-cols-2 gap-2">
+				<div class="grid grid-cols-2 gap-2">
 					{#each service.options as option}
 						<div class="grid grid-cols-2 gap-2">
 							<label class="label col-span-2" for={option.name}>{option.name}</label>
