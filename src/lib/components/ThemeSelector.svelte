@@ -68,9 +68,10 @@
 			<li class="menu-title text-xs">Téma</li>
 			{#each daisyThemes as theme}
 				<li>
-					<button class="gap-3 px-2" data-set-theme={theme} data-act-class="[&amp;_svg]:visible">
+					<button class="gap-3 px-2" data-set-theme={theme} data-act-class="[&_i]:!visible">
 						<ThemeTile {theme} />
 						<div class="w-32 truncate">{theme}</div>
+						<i class="invisible fa-solid fa-check"></i>
 					</button>
 				</li>
 			{/each}
