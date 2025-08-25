@@ -5,8 +5,8 @@
 
 	import '../app.css';
 	import '@fortawesome/fontawesome-free/css/all.min.css';
-	import ThemeChange from '$lib/components/ThemeChange.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import ThemeSelector from '$lib/components/ThemeSelector.svelte';
 
 	let { data, children }: LayoutProps = $props();
 
@@ -29,7 +29,7 @@
 	<input bind:checked={drawerOpened} id="drawer-menu" type="checkbox" class="drawer-toggle" />
 	<div class="drawer-content flex flex-col">
 		<!-- Navbar -->
-		<div class="navbar bg-primary text-primary-content w-full">
+		<div class="navbar bg-base-300 sticky top-0 shadow-sm w-full">
 			<label for="drawer-menu" aria-label="open sidebar" class="btn btn-square btn-ghost lg:hidden">
 				<i class="fa-solid fa-bars text-xl"></i>
 			</label>
@@ -47,7 +47,7 @@
 				{/each}
 			</ul>
 
-			<ThemeChange />
+			<ThemeSelector />
 		</div>
 
 		<!-- Page content here -->

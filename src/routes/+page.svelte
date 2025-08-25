@@ -4,7 +4,6 @@
 
 	import teachers from '$lib/teachers.json';
 	import TeacherCarousel from '$lib/components/TeacherCarousel.svelte';
-	import Banner from '$lib/components/Banner.svelte';
 
 	let { data }: PageProps = $props();
 </script>
