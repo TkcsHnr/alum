@@ -45,14 +45,17 @@
 	<div
 		tabindex="0"
 		role="button"
-		class="btn group btn-sm gap-1.5 px-1.5 btn-ghost"
+		class="btn group btn-sm gap-1.5 p-1.5 btn-ghost"
 		aria-label="Change Theme"
 	>
 		<ThemeTile />
 		<i class="fa-solid fa-angle-down text-xs opacity-60 !hidden sm:!inline-block"></i>
 	</div>
+	<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
 	<div
-		class="dropdown-content bg-base-200 text-base-content rounded-box top-px h-[30.5rem] max-h-[calc(100vh-8.6rem)] overflow-y-auto overflow-x-hidden border border-white/5 shadow-2xl outline-1 outline-black/5 mt-16"
+		tabindex="0"
+		aria-label="Theme selection dropdown"
+		class="dropdown-content bg-base-200 text-base-content rounded-box top-px h-[30.5rem] max-h-[calc(100vh-8.6rem)] overflow-y-auto overflow-x-hidden border border-white/5 shadow-2xl outline-1 outline-black/5 mt-12"
 	>
 		<ul class="menu w-56">
 			<li class="menu-title text-xs">Téma</li>

@@ -4,7 +4,6 @@
 	import { page } from '$app/state';
 
 	import '../app.css';
-	import '@fortawesome/fontawesome-free/css/all.min.css';
 	import Footer from '$lib/components/Footer.svelte';
 	import ThemeSelector from '$lib/components/ThemeSelector.svelte';
 
@@ -29,10 +28,12 @@
 	<input bind:checked={drawerOpened} id="drawer-menu" type="checkbox" class="drawer-toggle" />
 	<div class="drawer-content flex flex-col">
 		<!-- Navbar -->
-		<div
-			class="navbar bg-base-300 border-b border-base-content/15 top-0 shadow-sm w-full z-10"
-		>
-			<label for="drawer-menu" aria-label="open sidebar" class="btn btn-square btn-ghost lg:hidden">
+		<div class="navbar bg-base-300 border-b border-base-content/15 top-0 shadow-sm w-full z-10">
+			<label
+				for="drawer-menu"
+				aria-label="open sidebar"
+				class="btn btn-ghost lg:hidden size-8 flex justify-center items-center"
+			>
 				<i class="fa-solid fa-bars text-xl"></i>
 			</label>
 			<a class="btn btn-ghost text-lg sm:text-2xl mx-auto lg:m-0" href="/">Alum Oktatási Központ</a>
