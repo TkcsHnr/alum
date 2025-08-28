@@ -36,6 +36,7 @@
 	},
 	"dependencies": {
 		"@fortawesome/fontawesome-free": "^7.0.0",
+		"nodemailer": "^7.0.5",
 		"theme-change": "^2.5.0"
 	}
 }
