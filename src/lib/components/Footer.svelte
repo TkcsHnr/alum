@@ -1,11 +1,11 @@
 <footer
-	class="footer footer-horizontal footer-center bg-base-300 border-t border-base-content/15 text-base-content p-8 gap-4 mt-8"
+	class="footer footer-horizontal footer-center bg-base-300 border-t border-base-content/15 text-base-content p-8 gap-2 mt-8"
 >
 	<aside>
 		<p class="font-bold text-lg">Alum Oktatási Központ</p>
 		<p>© {new Date().getFullYear()} - Minden jog fenntarva.</p>
 	</aside>
-	<nav>
+	<!-- <nav>
 		<div class="grid grid-flow-col gap-4">
 			<a
 				href="https://facebook.com"
@@ -24,5 +24,9 @@
 				<i class="fa-solid fa-envelope text-2xl"></i>
 			</a>
 		</div>
-	</nav>
+	</nav> -->
+	<a href="mailto:info@alumoktatas.hu" class="link link-hover flex">
+		<i class="fa-solid fa-envelope"></i>
+		info@alumoktatas.hu
+	</a>
 </footer>

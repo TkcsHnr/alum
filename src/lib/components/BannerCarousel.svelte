@@ -7,12 +7,13 @@
 			id: 'osszefoglalo',
 			title: 'Alum Oktatási Központ',
 			description:
-				'Érettségi felkészítés, Középiskolai felkészítés, Korrepetálás, Online és személyes kurzusok, Lelkes egyetemista tanárok'
+				'Érettségi felkészítés, Középiskolai felkészítés, Korrepetálás, Online és személyes kurzusok, Lelkes egyetemista tanárok',
+			background: 'banner.jpeg'
 		},
-		{ id: 'erettsegi', title: 'Érettségi felkészítés', description: 'blablabla' },
-		{ id: 'felveteli', title: 'Felvételi felkészítés', description: 'blablabla' },
-		{ id: 'oktatas', title: 'Online és személyes kurzusok', description: 'blablabla' },
-		{ id: 'tanarok', title: 'Lelkes egyetemista tanárok', description: 'blablabla' }
+		{ id: 'erettsegi', title: 'Érettségi felkészítés', description: 'blablabla', background: 'banner.jpeg' },
+		{ id: 'felveteli', title: 'Felvételi felkészítés', description: 'blablabla', background: 'banner.jpeg' },
+		{ id: 'oktatas', title: 'Online és személyes kurzusok', description: 'blablabla', background: 'banner.jpeg' },
+		{ id: 'tanarok', title: 'Lelkes egyetemista tanárok', description: 'blablabla', background: 'banner.jpeg' }
 	];
 
 	let carouselElement: HTMLDivElement;
