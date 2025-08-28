@@ -10,7 +10,7 @@
 
 <BannerCarousel />
 
-<div class="grid gap-4 md:gap-8 w-full max-w-5xl p-4 pt-0 md:pt-4">
+<div class="grid gap-4 md:gap-8 w-full max-w-5xl px-4 pb-8 pt-0 md:pt-4">
 	<Section title="Rólunk" href="/rolunk" image="placeholder.jpg" reverse />
 	<Section
 		title="Szolgáltatásaink"
