@@ -35,7 +35,7 @@
 </button>
 
 <dialog bind:this={modal} class="modal">
-	<div class="modal-box max-w-3xl gap-2">
+	<div class="modal-box max-w-3xl gap-2 p-4">
 		<div class="flex gap-2">
 			<div class="flex flex-wrap gap-2 items-baseline grow">
 				<h2 class="text-lg font-bold">
