@@ -4,7 +4,7 @@
 
 <div class="grid md:grid-cols-2 md:gap-8 w-full">
 	<img
-		class="bg-base-200 aspect-[16/9] hidden md:block"
+		class="bg-base-200 aspect-[16/9] hidden md:block rounded-box"
 		src={image}
 		alt={title}
 		class:order-1={reverse}
@@ -13,7 +13,7 @@
 		<img
 			src={image}
 			alt={title}
-			class="absolute w-full h-full left-0 top-0 object-cover md:hidden -z-10 opacity-25"
+			class="absolute w-full h-full left-0 top-0 object-cover md:hidden -z-10 opacity-25 rounded-box"
 		/>
 		<h2 class="font-bold text-3xl">{title}</h2>
 		{#if description}
