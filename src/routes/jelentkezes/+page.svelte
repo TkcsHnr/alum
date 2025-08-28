@@ -12,9 +12,10 @@
 		dolor, quia nobis possimus quis ratione explicabo obcaecati, esse, voluptas totam quidem
 		similique. Provident consectetur pariatur vel ipsum excepturi, saepe a, aliquam iure veritatis
 		dolore ad. Corrupti, animi.
-		<br />
-		<i class="fa-solid fa-envelope"></i>
-		<a href="mailto:info@alum.hu" class="link link-info">info@alum.hu</a>
+		<a href="mailto:info@alumoktatas.hu" class="link link-hover link-primary inline-flex items-baseline gap-1">
+			<i class="fa-solid fa-envelope"></i>
+			info@alumoktatas.hu
+		</a>
 	</p>
 
 	<p>
