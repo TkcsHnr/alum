@@ -11,7 +11,7 @@
 </svelte:head>
 
 <Container>
-	<h1 class="text-2xl font-bold">Bemutatkozás</h1>
+	<h1 class="text-2xl font-bold">Rólunk</h1>
 	<p class="text-justify">
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iste atque cupiditate assumenda
 		ea? Ad fugiat laboriosam ea voluptas doloremque dicta amet placeat expedita accusamus ratione

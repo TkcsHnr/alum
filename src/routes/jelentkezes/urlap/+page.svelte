@@ -52,7 +52,7 @@
 	{/if}
 </div>
 
-<form method="POST" class="w-full px-4 flex justify-center">
+<form method="POST" class="w-full px-4 flex justify-center" style:view-transition-name="jelentkezes">
 	<input type="text" hidden name="subjects" value={subjects} />
 	{#if service}
 		<input type="email" hidden name="service_email" value={service.email} />
@@ -175,6 +175,6 @@
 		<textarea class="textarea w-full" name="message" placeholder="Üzenet" bind:value={message}
 		></textarea>
 
-		<input type="submit" class="btn btn-primary mt-4" value="Küldés" />
+		<input type="submit" class="btn btn-primary mt-4" value="Küldés"/>
 	</fieldset>
 </form>

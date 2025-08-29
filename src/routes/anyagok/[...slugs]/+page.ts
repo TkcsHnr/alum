@@ -17,14 +17,14 @@ export function load({ params }) {
     let currentResource: Resource = root;
     let children: Resource[] = resources;
 
-    const breadcrumbs: { id: string; name: string | number }[] = [{ ...root }];
+    const breadcrumbs: { id: string; name: string }[] = [{ id: root.id, name: root.name as string }];
 
     for (const slug of slugs) {
         const match = children.find(r => r.id === slug);
         if (!match) break;
 
         currentResource = match;
-        breadcrumbs.push({ id: match.id, name: match.name });
+        breadcrumbs.push({ id: match.id, name: match.name as string });
         children = match.children || [];
     }
 

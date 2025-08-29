@@ -6,6 +6,7 @@
 	import '../app.css';
 	import Footer from '$lib/components/Footer.svelte';
 	import ThemeSelector from '$lib/components/ThemeSelector.svelte';
+	import ViewTransition from '$lib/components/ViewTransition.svelte';
 
 	let { data, children }: LayoutProps = $props();
 
@@ -22,13 +23,16 @@
 		{ path: '/anyagok', name: 'Anyagok' },
 		{ path: '/kapcsolat', name: 'Kapcsolat' }
 	];
+
 </script>
+
+<ViewTransition />
 
 <div class="drawer h-full">
 	<input bind:checked={drawerOpened} id="drawer-menu" type="checkbox" class="drawer-toggle" />
 	<div class="drawer-content flex flex-col">
 		<!-- Navbar -->
-		<div class="navbar bg-base-300 border-b border-base-content/15 top-0 shadow-sm w-full z-10">
+		<header class="navbar bg-base-300 border-b border-base-content/15 top-0 shadow-sm w-full z-10">
 			<label
 				for="drawer-menu"
 				aria-label="open sidebar"
@@ -51,7 +55,7 @@
 			</ul>
 
 			<ThemeSelector />
-		</div>
+		</header>
 
 		<!-- Page content here -->
 		<main class="flex flex-col items-center gap-4 h-full grow">

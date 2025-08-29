@@ -16,7 +16,10 @@
 		<h1 class="text-2xl font-bold justify-self-center text-center grow">{service.name}</h1>
 		<div class="aspect-square h-full"></div>
 	</div>
-	<div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 max-w-4xl">
+	<div
+		class="service grid grid-cols-1 md:grid-cols-2 gap-4 px-4 max-w-4xl"
+		style:--service-div-id={service.id}
+	>
 		{#each service.options as option}
 			<div class="card bg-base-200 border border-base-content/10 shadow-sm h-full">
 				<div class="card-body p-4 gap-0">
@@ -32,5 +35,15 @@
 			</div>
 		{/each}
 	</div>
-	<a href="/jelentkezes" class="btn btn-primary w-fit mx-auto btn-lg mt-4">Jelentkezés</a>
+	<a
+		href="/jelentkezes"
+		class="btn btn-primary w-fit mx-auto btn-lg mt-4"
+		style:view-transition-name="jelentkezes-gomb">Jelentkezés</a
+	>
 {/if}
+
+<style>
+	div.service {
+		view-transition-name: var(--service-div-id);
+	}
+</style>

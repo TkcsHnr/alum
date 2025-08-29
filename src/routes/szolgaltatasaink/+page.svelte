@@ -14,7 +14,8 @@
 	{#each services as service}
 		<a
 			href="/szolgaltatasaink/{service.id}"
-			class="card group h-full bg-base-200 hover:bg-base-300 shadow-sm border border-base-content/10 hover:scale-[102.5%] transition-all"
+			class="service card group h-full bg-base-200 hover:bg-base-300 shadow-sm border border-base-content/10 hover:scale-[102.5%] transition-all"
+			style:--service-btn-id={service.id}
 		>
 			<div class="card-body p-4">
 				<h2 class="card-title text-left">
@@ -33,5 +34,15 @@
 			</div>
 		</a>
 	{/each}
-	<a href="/jelentkezes" class="btn btn-primary w-fit mx-auto btn-lg mt-4">Jelentkezés</a>
+	<a
+		href="/jelentkezes"
+		class="btn btn-primary w-fit mx-auto btn-lg mt-4"
+		style:view-transition-name="jelentkezes-gomb">Jelentkezés</a
+	>
 </div>
+
+<style>
+	.service {
+		view-transition-name: var(--service-btn-id);
+	}
+</style>

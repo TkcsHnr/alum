@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { afterNavigate, beforeNavigate, onNavigate } from '$app/navigation';
 	import { page } from '$app/state';
 
 	let { data } = $props();
@@ -8,6 +9,33 @@
 	let basePath = $derived(page.url.pathname);
 
 	let classList = 'btn btn-lg grow join-item';
+
+	function viewTransitionName(words: string[]): string {
+		return words
+			.join('-')
+			.normalize('NFD') // decompose accents
+			.replace(/[\u0300-\u036f]/g, '') // strip combining marks
+			.toLowerCase()
+			.replace(/[^a-z0-9_-]/g, '-') // allow only letters, numbers, _, -
+			.replace(/-+/g, '-') // collapse multiple hyphens
+			.replace(/^-|-$/g, ''); // trim leading/trailing hyphens
+	}
+
+	function getLevel(path: string) {
+		return path.split('/').filter(Boolean).length;
+	}
+
+	let transitionLevel = $state(1);
+	beforeNavigate(({ from, to, cancel }) => {
+		const fromLevel = getLevel(from?.url.pathname || '');
+		const toLevel = getLevel(to?.url.pathname || '');
+
+		if ((fromLevel == 2 && toLevel == 3) || (fromLevel == 3 && toLevel == 2)) {
+			transitionLevel = 2;
+		} else {
+			transitionLevel = 1;
+		}
+	});
 </script>
 
 <svelte:head>
@@ -34,8 +62,11 @@
 			{/each}
 		</ul>
 	</div>
-	<ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-		{#each currentResource.children || [] as item}
+	<ul
+		class="resources grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
+		style:--tr-parent-name={viewTransitionName(breadcrumbs.map((b) => b.name))}
+	>
+		{#each currentResource.children?.toReversed() || [] as item}
 			<li class="join join-vertical h-full aspect-video">
 				{#if item.url}
 					<a href={item.url} target="_blank" class="{classList} btn-primary btn-soft">
@@ -51,7 +82,15 @@
 						<span>- ősz</span>
 					</a>
 				{:else}
-					<a href="{basePath}/{item.id}" class={classList}>
+					<a
+						href="{basePath}/{item.id}"
+						class={classList}
+						class:category={breadcrumbs.length == transitionLevel}
+						style:--tr-child-name={viewTransitionName([
+							...breadcrumbs.map((b) => b.name),
+							item.name as string
+						])}
+					>
 						{item.name}
 					</a>
 				{/if}
@@ -59,3 +98,12 @@
 		{/each}
 	</ul>
 </div>
+
+<style>
+	ul.resources {
+		view-transition-name: var(--tr-parent-name);
+	}
+	ul.resources li a.category {
+		view-transition-name: var(--tr-child-name);
+	}
+</style>
