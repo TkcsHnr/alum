@@ -3,7 +3,7 @@ import type { PageServerLoad } from './$types';
 
 import { EMAIL_PASSWORD } from '$env/static/private';
 
-import nodemailer from 'nodemailer';
+import * as nodemailer from 'nodemailer';
 
 export const load = (async () => {
 	return {};
@@ -52,18 +52,43 @@ export const actions = {
 			},
 		});
 
-		(async () => {
-			const info = await transporter.sendMail({
+		try {
+			const info1 = await transporter.sendMail({
 				from: "postmaster@alumoktatas.hu",
 				to: service_email,
 				replyTo: email,
 				subject: `${service_name}`,
 				text: emailBody,
 			});
+			console.log("Email sent:", info1.messageId);
+		} catch (err) {
+			console.error("Email sending failed:", err);
+			return { received: false, error: "A jelentkező emailt nem sikerült elküldeni." };
+		}
 
-			console.log("Message sent:", info.messageId);
-		})();
+		let error;
+		let confirmEmailBody = "";
+		if (parent_name != '') {
+			confirmEmailBody += `Tisztelt ${parent_name}!\n`;
+			confirmEmailBody += `Megkaptuk ${student_name} jelentkezését, hamarosan felvesszük Önnel a kapcsolatot!`;
+		} else {
+			confirmEmailBody += `Kedves ${student_name}!\n`;
+			confirmEmailBody += `Megkaptuk a jelentkezésedet, hamarosan felvesszük veled a kapcsolatot!\n`;
+		}
+		confirmEmailBody += "Üdvözlettel,\nAz Alum Oktatási Központ csapata";
+		try {
+			const info2 = await transporter.sendMail({
+				from: service_email,
+				to: email,
+				subject: "Jelentkezés megerősítése",
+				text: confirmEmailBody,
+			});
+			console.log("Confirmation email sent:", info2.messageId);
+		} catch (err) {
+			console.error("Confirmation email sending failed:", err);
+			return { received: true, error: "A visszaigazoló emailt nem sikerült elküldeni." };
+		}
 
-		return { success: true };
+		return { received: true, email };
 	},
 } satisfies Actions;

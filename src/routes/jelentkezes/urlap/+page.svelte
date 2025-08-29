@@ -28,7 +28,27 @@
 	}
 </script>
 
-<form method="POST" class="w-full px-4 mt-4 flex justify-center">
+<div class="p-4 pb-0 flex flex-col items-center gap-2 max-w-4xl">
+	{#if form && form.received}
+		<div role="alert" class="alert alert-success">
+			<i class="fa-solid fa-check"></i>
+			<span>
+				A jelentkezésed sikeresen elküldve!
+				{#if form.email}
+					Ellenőrizd a visszaigazoló emailt a(z) <i>{form.email}</i> címen.
+				{/if}
+			</span>
+		</div>
+	{/if}
+	{#if form && form.error}
+		<div role="alert" class="alert alert-error w-fit">
+			<i class="fa-solid fa-circle-exclamation"></i>
+			<span>{form.error}</span>
+		</div>
+	{/if}
+</div>
+
+<form method="POST" class="w-full px-4 flex justify-center">
 	<input type="text" hidden name="subjects" value={subjects} />
 	{#if service}
 		<input type="email" hidden name="service_email" value={service.email} />
