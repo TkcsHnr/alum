@@ -2,7 +2,7 @@
 	let { title, description, email } = $props();
 </script>
 
-<div class="card bg-base-200 border border-base-content/15 shadow-sm w-full max-w-md">
+<div class="card bg-base-200 border border-base-content/10 shadow-sm w-full max-w-md">
 	<div class="card-body p-4">
 		<h2 class="card-title">{title}</h2>
 		<p>

@@ -10,7 +10,7 @@
 		e.currentTarget.blur();
 		modal.showModal();
 	}}
-	class="carousel-item cursor-pointer card bg-base-100 border border-base-content/15 hover:bg-base-200 w-60 shadow-sm outline-error hover:shadow-md transition-all hover:scale-105 group"
+	class="carousel-item cursor-pointer card bg-base-100 shadow-sm border border-base-content/10 hover:bg-base-200 w-60 transition-all hover:scale-105 group"
 >
 	<figure class="px-6 pt-6">
 		<img

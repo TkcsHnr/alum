@@ -18,7 +18,7 @@
 	</div>
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 max-w-4xl">
 		{#each service.options as option}
-			<div class="card bg-base-200 shadow-sm border border-base-content/15">
+			<div class="card bg-base-200 border border-base-content/10 shadow-sm h-full">
 				<div class="card-body p-4 gap-0">
 					<h2 class="card-title text-left">{option.name}</h2>
 					<p class="text-justify mt-2">

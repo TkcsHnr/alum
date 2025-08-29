@@ -6,6 +6,8 @@
 	let { currentResource, breadcrumbs } = $derived(data);
 
 	let basePath = $derived(page.url.pathname);
+
+	let classList = 'btn btn-lg grow join-item';
 </script>
 
 <svelte:head>
@@ -36,35 +38,20 @@
 		{#each currentResource.children || [] as item}
 			<li class="join join-vertical h-full aspect-video">
 				{#if item.url}
-					<a
-						href={item.url}
-						target="_blank"
-						class="btn btn-lg grow border border-base-content/15 join-item hover:scale-105 transition-all"
-					>
+					<a href={item.url} target="_blank" class="{classList} btn-primary btn-soft">
 						{item.name}
 					</a>
 				{:else if item.urls}
-					<a
-						href={item.urls[0]}
-						target="_blank"
-						class="btn btn-lg grow join-item border border-base-content/15 hover:scale-105 transition-all"
-					>
+					<a href={item.urls[0]} target="_blank" class="{classList} btn-primary btn-soft">
 						{item.name}
 						<span>- tavasz</span>
 					</a>
-					<a
-						href={item.urls[1]}
-						target="_blank"
-						class="btn btn-lg grow join-item border border-base-content/15 hover:scale-105 transition-all"
-					>
+					<a href={item.urls[1]} target="_blank" class="{classList} btn-secondary btn-soft">
 						{item.name}
 						<span>- ősz</span>
 					</a>
 				{:else}
-					<a
-						href="{basePath}/{item.id}"
-						class="btn btn-lg grow join-item border border-base-content/15 hover:scale-105 transition-all"
-					>
+					<a href="{basePath}/{item.id}" class={classList}>
 						{item.name}
 					</a>
 				{/if}

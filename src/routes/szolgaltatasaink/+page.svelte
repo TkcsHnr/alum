@@ -14,7 +14,7 @@
 	{#each services as service}
 		<a
 			href="/szolgaltatasaink/{service.id}"
-			class="card group bg-base-200 border border-base-content/15 shadow-sm h-full hover:bg-base-300 hover:shadow-md hover:scale-[102.5%] transition-all cursor-pointer"
+			class="card group h-full bg-base-200 hover:bg-base-300 shadow-sm border border-base-content/10 hover:scale-[102.5%] transition-all"
 		>
 			<div class="card-body p-4">
 				<h2 class="card-title text-left">
@@ -30,9 +30,6 @@
 					quasi molestias ut dolores. Amet, sed? Lorem ipsum dolor sit amet consectetur adipisicing elit.
 					Accusantium, fuga et minima odit maiores cumque voluptates culpa optio quo aliquam?
 				</p>
-				<div class="card-actions justify-end hidden">
-					<div class="btn btn-primary">Részletek</div>
-				</div>
 			</div>
 		</a>
 	{/each}
