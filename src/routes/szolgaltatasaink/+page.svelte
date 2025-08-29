@@ -1,10 +1,13 @@
 <script lang="ts">
-	import Container from '$lib/components/Container.svelte';
 	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();
 	let { services } = data;
 </script>
+
+<svelte:head>
+	<title>Szolgáltatásaink</title>
+</svelte:head>
 
 <h1 class="text-2xl font-bold mt-4">Szolgáltatásaink</h1>
 <div class="grid grid-cols-1 gap-4 max-w-4xl px-4">

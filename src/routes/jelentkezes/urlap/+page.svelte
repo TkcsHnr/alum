@@ -28,6 +28,10 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Jelentkezési űrlap</title>
+</svelte:head>
+
 <div class="p-4 pb-0 flex flex-col items-center gap-2 max-w-4xl">
 	{#if form && form.received}
 		<div role="alert" class="alert alert-success">

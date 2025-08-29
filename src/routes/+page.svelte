@@ -8,6 +8,10 @@
 	let { data }: PageProps = $props();
 </script>
 
+<svelte:head>
+	<title>Alum Oktatási Központ</title>
+</svelte:head>
+
 <BannerCarousel />
 
 <div class="grid gap-4 md:gap-8 w-full max-w-5xl px-4 pb-8 pt-0 md:pt-4">

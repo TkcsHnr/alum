@@ -5,6 +5,10 @@
 	let { data }: PageProps = $props();
 </script>
 
+<svelte:head>
+	<title>Jelentkezés</title>
+</svelte:head>
+
 <Container>
 	<h1 class="text-2xl font-bold">Jelentkezés</h1>
 	<p class="text-justify">

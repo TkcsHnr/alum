@@ -6,6 +6,10 @@
 	let { data }: PageProps = $props();
 </script>
 
+<svelte:head>
+	<title>Kapcsolat</title>
+</svelte:head>
+
 <Container>
 	<h1 class="text-2xl font-bold mb-4 mx-auto">Kapcsolat</h1>
 

@@ -4,6 +4,10 @@
 	let { service } = data;
 </script>
 
+<svelte:head>
+	<title>{service ? service.name : 'Szolgáltatásaink'}</title>
+</svelte:head>
+
 {#if service}
 	<div class="max-w-4xl flex w-full mt-4 px-4">
 		<a href="/szolgaltatasaink" class="btn btn-sm aspect-square min-w-0 w-auto" aria-label="back">

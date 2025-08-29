@@ -8,6 +8,10 @@
 	let basePath = $derived(page.url.pathname);
 </script>
 
+<svelte:head>
+	<title>Anyagok</title>
+</svelte:head>
+
 <div class="px-4 max-w-4xl w-full flex flex-col gap-2 h-full">
 	<div class="breadcrumbs pt-4 w-fit mx-auto">
 		<ul>
