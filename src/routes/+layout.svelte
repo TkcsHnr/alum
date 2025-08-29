@@ -68,7 +68,8 @@
 				<li>
 					<a
 						href={route.path}
-						class:font-bold={page.url.pathname == route.path}
+						class:font-bold={page.url.pathname === route.path ||
+							page.url.pathname.startsWith(route.path + '/')}
 						onclick={closeDrawer}
 					>
 						{route.name}
